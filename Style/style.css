@@ -1,0 +1,196 @@
+body
+{
+    background-color: black;
+    max-width: 1280px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    margin: auto;
+}
+
+header
+{
+    height: 5em;
+    display: flex;
+    align-items:center;
+}
+
+header div, nav li
+{
+    height: 3em;
+    max-width: 7em;
+    margin: 1em;
+
+    border-radius: 15px;
+
+    text-align: center;
+    color:coral;
+}
+
+nav ul li
+{
+    line-height: 3em;
+    list-style-type: none;
+}
+
+#logo
+{
+    box-shadow: 6px 6px 6px coral;
+}
+
+nav ul li:hover{
+    background-color:rgb(228, 112, 18);
+    color:deepskyblue;
+    font-weight: bold;
+}
+
+header a
+{
+    color:cornflowerblue;
+    text-decoration: none;
+}
+
+header div 
+{
+    border: 1px coral solid;
+}
+
+header nav li{
+    border: 1px blue solid;
+}
+
+
+nav ul {
+    border: 2px white;
+    display: flex;
+    overflow-x: auto;
+}
+
+.scrolling img {
+    max-width: 100px;
+}
+.scrolling{
+    display: flex;
+}
+
+.filmlist
+{
+    max-height: 230px;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide
+{
+    min-width: 190px;
+    height: 200px;
+    line-height: 200px;
+    border: solid 1px blue;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.slide h1
+{
+    height: 50px;
+    vertical-align: top;
+}
+
+section
+{
+    max-width:1000px;
+    border: 2px red solid;
+    border-radius: 15px;
+    margin:10px 0px 10px 0px;
+}
+
+#categories
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+#BestFilm {
+    height: 512px; 
+    max-width: 1280px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#BestFilm img
+{
+    position: absolute;
+}
+
+#BestFilm div
+{
+    max-width: 500px;
+    padding-left: 20px;
+    border: cornsilk solid;
+    z-index: 1;
+}
+
+#BestFilm p{
+    font-size: 30px;
+}
+
+.button
+{
+    height:50px;
+}
+
+.button a img
+{
+    height: 50px;
+    max-width: 50px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    color: rgb(77, 61, 146);
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @media all and (max-width: 1024px) {
+
+  }
