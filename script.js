@@ -1,3 +1,35 @@
+let bestRated = []
+let bestHistory = []
+let bestFantasy = []
+let bestHorror = []
+
+function getBestRated(url){
+  fetch(url)
+    .then((response) =>
+      response.json().then((data) => {
+        for(let i = 0; i < data.results.length; i++){
+          bestRated.push(data.results[i]);
+        }
+      }
+      ).then(fetch(url + "&page=2").then((response2) =>
+        response2.json().then((data) => {
+          for(let i = 0; i < 2; i++){
+            bestRated.push(data.results[i]);
+            }
+            console.log(document.getElementById("BestFilmImage"));
+            document.getElementById("BestFilmImage").src = bestRated[0]['image_url'];
+          }
+          )
+        )
+      )
+    )
+    .catch((error) => {
+     console.log(error);
+      }
+    )
+}
+
+getBestRated("http://localhost:8000/api/v1/titles/?sort_by=-Imdb_score,-votes")
 
 
 left_arrows = document.getElementsByClassName("left_scroll")
