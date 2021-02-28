@@ -1,34 +1,24 @@
 /*---- Base ----*/
 body {
-  background-color: black;
+  background-color: #1d3557;
   max-width: 1000px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
+  color: #f1faee;
   margin: auto;
   align-content: center;
 }
 
 header {
-  height: 5em;
   display: flex;
   align-items: center;
 }
-header div {
-  height: 3em;
-  max-width: 7em;
-  margin: 1em;
-  border-radius: 15px;
-  text-align: center;
-  color: coral;
-  border: 1px coral solid;
-}
 header nav ul {
-  border: 2px white;
+  border: 2px #a8dadc;
   display: flex;
   overflow-x: auto;
 }
 header nav li {
-  border: 1px blue solid;
+  border: 1px #a8dadc solid;
   line-height: 3em;
   list-style-type: none;
   padding: 0px 15px 0px 15px;
@@ -37,31 +27,32 @@ header nav li {
   margin: 1em;
   border-radius: 15px;
   text-align: center;
-  color: coral;
+  color: #e63946;
 }
 header nav li:hover {
-  background-color: #ff7300;
+  background-color: #e63946;
+}
+header nav li:hover a {
+  color: #1d3557;
 }
 header nav a {
-  color: cornflowerblue;
+  color: #e63946;
   text-decoration: none;
-}
-header nav a:hover {
-  color: #0f0094;
 }
 
 .best-film {
+  background-color: #457b9d;
   max-width: 1000px;
   display: flex;
   flex-direction: row;
-  border: solid chocolate;
+  border: 2px #e63946 solid;
+  border-radius: 15px;
 }
 .best-film .best-film__title {
   width: 99%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: solid #3ec77e;
 }
 .best-film .best-film__title h1 {
   width: 100%;
@@ -74,7 +65,9 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: solid chartreuse;
+}
+.best-film .best-film__image img {
+  border-radius: 15px;
 }
 .best-film .best-film__data {
   width: 100%;
@@ -84,16 +77,19 @@ header nav a:hover {
   border-radius: 20px;
 }
 .best-film .best-film__description {
-  min-height: 80%;
+  height: 80%;
   padding: 0px 0px 0px 20px;
-  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 20px;
-  max-height: 80%;
 }
 
 .logo {
-  box-shadow: 6px 6px 6px coral;
-  padding: 0px 15px 0px 15px;
+  padding: 15px;
+  width: 25%;
+}
+.logo img {
+  size: cover;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .categories {
@@ -107,10 +103,10 @@ header nav a:hover {
 .categories section {
   max-width: 1000px;
   min-width: 190px;
-  border: 2px red solid;
+  border: 2px #e63946 solid;
   border-radius: 15px;
   margin: 10px 0px 10px 0px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #457b9d;
 }
 .categories section h1 {
   padding-left: 30px;
@@ -131,13 +127,14 @@ header nav a:hover {
   padding-bottom: 20px;
 }
 .scrolling .film-list .film-list__slide {
-  min-width: 190px;
+  background-size: cover;
+  min-width: 135px;
   height: 200px;
-  line-height: 200px;
-  border: solid 1px blue;
-  text-align: center;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  border: solid 1px #a8dadc;
+  margin: 10px;
+}
+.scrolling .film-list .film-list__slide:hover {
+  transform: scale(1.05);
 }
 .scrolling .film-list .film-list__slide h1 {
   height: 50px;
@@ -147,15 +144,20 @@ header nav a:hover {
 /*---- Components ----*/
 button {
   height: 70%;
-  background-color: #4CAF50;
+  background-color: #1d3557;
   border: none;
-  color: white;
+  border-radius: 15px;
+  color: #e63946;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: auto;
+}
+button:hover {
+  background-color: #e63946;
+  color: #1d3557;
 }
 
 /* The Modal (background) */
@@ -166,7 +168,7 @@ button {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 100px;
+  padding-top: 40px;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -176,8 +178,8 @@ button {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  color: #4d3d92;
-  background-color: black;
+  color: #1d3557;
+  background-color: #1d3557;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.2);
   /* Black w/ opacity */
@@ -185,24 +187,81 @@ button {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #1d3557;
+  font-size: 14px;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #a8dadc;
+  width: 80%;
+  height: 85%;
+  table-layout: fixed;
+  /* The Close Button */
+}
+.modal-content h4 {
+  color: #e63946;
+}
+.modal-content .modal__image-and-details {
+  background-color: #a8dadc;
+  margin: 1%;
+  display: flex;
+  height: 60%;
+}
+.modal-content .modal__image-and-details .modal__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 20%;
+}
+.modal-content .modal__image-and-details .modal__image img {
+  size: cover;
+  min-width: 100%;
+  max-width: 100%;
+}
+.modal-content .modal__image-and-details .modal__details {
+  background-color: #a8dadc;
+  width: 72%;
+  padding-left: 15px;
+  overflow: auto;
+}
+.modal-content .modal__image-and-details .modal__details table {
+  table-layout: fixed;
+  width: 100%;
+}
+.modal-content .modal__image-and-details .modal__details table td {
+  text-align: start;
+}
+.modal-content .modal__film-notes-resume {
+  display: flex;
+  background-color: #a8dadc;
+  margin: 1%;
+  height: 33%;
+  overflow: auto;
+}
+.modal-content .modal__film-notes-resume table {
+  width: 100%;
+  text-align: center;
+}
+.modal-content .modal__film-notes-resume table tr {
+  height: 25%;
+}
+.modal-content .modal__film-notes-resume .modal__film-notes {
+  width: 20%;
+}
+.modal-content .modal__film-notes-resume .modal__film-resume {
+  padding-left: 15px;
   width: 80%;
 }
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
+.modal-content .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #a8dadc;
+  font-size: 40px;
   font-weight: bold;
+  z-index: 3;
 }
-
-.close:hover,
-.close:focus {
-  color: #000;
+.modal-content .close:hover, .modal-content .close:focus {
+  color: #e63946;
   text-decoration: none;
   cursor: pointer;
 }

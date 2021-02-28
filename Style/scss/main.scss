@@ -1,39 +1,33 @@
 /*---- Base ----*/
+$color1: #1d3557;
+$color2: #457b9d;
+$color3: #e63946;
+$color4: #a8dadc;
+$color5: #f1faee;
 
 body
 {
-    background-color: black;
+    background-color: $color1;
     max-width: 1000px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:white;
+    color: $color5;
     margin: auto;
     align-content: center;
 }
 
 
 header {
-    height: 5em;
     display: flex;
     align-items: center;
-    div {
-        height: 3em;
-        max-width: 7em;
-        margin: 1em;
 
-        border-radius: 15px;
-
-        text-align: center;
-        color:coral;
-        border: 1px coral solid;
-    }
     nav {
         ul {
-            border: 2px white;
+            border: 2px $color4;
             display: flex;
             overflow-x: auto;
         }
         li {
-            border: 1px blue solid;
+            border: 1px $color4 solid;
             line-height: 3em;
             list-style-type: none;
             padding: 0px 15px 0px 15px;
@@ -44,34 +38,35 @@ header {
             border-radius: 15px;
 
             text-align: center;
-            color:coral;
+            color: $color3;
             &:hover{
-                background-color:rgb(255, 115, 0);
+                background-color: $color3;
+                a {
+                    color:$color1;
+                }
             }
         }
 
         a {
-            color:cornflowerblue;
+            color: $color3;
             text-decoration: none;
-            &:hover {
-                color:rgb(15, 0, 148);
-            }
         }
     }
 }
 
 
 .best-film {
+    background-color: $color2;
     max-width: 1000px;
     display: flex;
     flex-direction: row;
-    border: solid chocolate;
+    border: 2px $color3 solid;
+    border-radius: 15px;
     .best-film__title {
         width: 99%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        border: solid rgb(62, 199, 126);
         h1 {
             width: 100%;
             margin-left: 40px;
@@ -85,7 +80,9 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: solid chartreuse;
+        img {
+            border-radius: 15px;
+        }
     }
     
     .best-film__data{
@@ -97,18 +94,20 @@ header {
     }
     
     .best-film__description {
-        min-height: 80%;
+        height: 80%;
         padding: 0px 0px 0px 20px;
-        background-color: rgb(0, 0, 0, 0.8);
         border-radius: 20px;
-        max-height: 80%;
-    
     }
 }
 
 .logo{
-    box-shadow: 6px 6px 6px coral;
-    padding: 0px 15px 0px 15px;
+    padding: 15px;
+    width: 25%;
+    img {
+        size: cover;
+        min-width: 100%;
+        max-width: 100%;
+    }
 }
 
 
@@ -123,10 +122,10 @@ header {
     section {
         max-width: 1000px;
         min-width: 190px;
-        border: 2px red solid;
+        border: 2px $color3 solid;
         border-radius: 15px;
         margin:10px 0px 10px 0px;
-        background-color: rgb(256,256,256,0.05);
+        background-color: $color2;
     
         h1 {
             padding-left: 30px;
@@ -142,6 +141,7 @@ header {
     display: flex;
     img {
         max-width: 100px;
+
     }
     .film-list {
         max-height: 230px;
@@ -149,13 +149,15 @@ header {
         overflow: hidden;
         padding-bottom: 20px;
         .film-list__slide {
-            min-width: 190px;
+            background-size: cover;
+            min-width: 135px;
             height: 200px;
-            line-height: 200px;
-            border: solid 1px blue;
-            text-align: center;
-            margin-right: 10px;
-            margin-bottom: 10px;
+            border: solid 1px $color4;
+            margin: 10px;
+            &:hover {
+                transform: scale(1.05);
+            }
+
             h1 {
                 height: 50px;
                 vertical-align: top;
@@ -170,15 +172,20 @@ header {
 button
 {
     height: 70%;
-    background-color: #4CAF50;
+    background-color: $color1;
     border: none;
-    color: white;
+    border-radius: 15px;
+    color: $color3;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: auto;
+    &:hover{
+        background-color: $color3;
+        color:$color1;
+    }
 }
 
 
@@ -187,37 +194,95 @@ button
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 40px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    color: rgb(77, 61, 146);
-    background-color: rgb(0, 0, 0); /* Fallback color */
+    color: $color1;
+    background-color: $color1; /* Fallback color */
     background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
 }
   
   /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
+    background-color: $color1;
+    font-size: 14px;
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid $color4;
     width: 80%;
-}
-  
-  /* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-  
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
+    height: 85%;
+    table-layout: fixed;
+    h4 {
+        color:$color3;
+    }
+    .modal__image-and-details{
+        background-color: $color4;
+        margin: 1%;
+        display: flex;
+        height:60%;
+        .modal__image{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 20%;
+            img {
+                size: cover;
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+        .modal__details{
+            background-color: $color4;
+            width: 72%;
+            padding-left: 15px;
+            overflow: auto;
+            table{
+                table-layout: fixed;
+                width: 100%;
+                td {
+                    text-align: start;
+                }
+            }
+        }
+    }
+    .modal__film-notes-resume {
+        display: flex;
+        background-color: $color4;
+        margin: 1%;
+        height: 33%;
+        overflow: auto;
+        table{
+            width: 100%;
+            text-align: center;
+            tr {
+                height:25%;
+            }
+        }
+        .modal__film-notes{
+            width: 20%;
+        }
+        .modal__film-resume{
+            padding-left: 15px;
+            width: 80%;
+        }
+    }
+      /* The Close Button */
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: $color4;
+        font-size: 40px;
+        font-weight: bold;
+        z-index: 3;
+        &:hover,
+        &:focus {
+        color: $color3;
+        text-decoration: none;
+        cursor: pointer;
+        }
+    }
+} 

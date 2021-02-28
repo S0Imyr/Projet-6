@@ -11,12 +11,12 @@
     <div class="bloc_page">
         <header>
             <div class="logo">
-                <p>JustStreamIt</p>
+                <img src="Style/Images/Logo.png" alt="logo">
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Catégories</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
                 </ul>
             </nav>
         </header>
@@ -26,12 +26,12 @@
                 <img src="Style/Images/NoImage.png" />
             </div>
             <div class="best-film__data">
-                <div class=best-film__title>
-                    <h1>Titre</h1>
-                    <button>Lire</button>
+                <div class="best-film__title">
+                    <h1>Title</h1>
+                    <button>Play</button>
                 </div>
-                <div class='best-film__description'>
-                    <h4>Description :</h4>
+                <div class="best-film__description">
+                    <h4>Summary :</h4>
                     <p></p>
                 </div>
             </div>
@@ -40,352 +40,1053 @@
         <div class="categories">
 
             <section class="best-rated">
-                <h1>Les mieux notés</h1>
+                <h1>Best rated</h1>
                 <div class="scrolling">
-                    <img class='left_scroll' src="Style/Images/defilement_gauche.png" />
+                    <img class='leftScroll' src="Style/Images/defilementGauche.png" />
                     <div  class="film-list" id="list-best-rated">
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn1">Film 1</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm1" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Some text in the Modal..1</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn2">Film 2</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm2" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..2</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn3">Film 3</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm3" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..3</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn4">Film 4</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm4" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..4</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn5">Film 5</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm5" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..5</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn6">Film 6</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm6" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..6</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn7">Film 7</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm7" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal 7..</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                     </div>
-                    <img class='right_scroll' src="Style/Images/defilement_droite.png" />
+                    <img class='rightScroll' src="Style/Images/defilementDroite.png" />
                 </div>
             </section>
 
             <section id="Fantasy">
                 <h1>Fantasy</h1>
                 <div class="scrolling">
-                    <img class='left_scroll' src="Style/Images/defilement_gauche.png" />
+                    <img class='leftScroll' src="Style/Images/defilementGauche.png" />
                     <div  class="film-list" id="list-best-rated">
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn1">Film 1</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm1" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Some text in the Modal..1</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn2">Film 2</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm2" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..2</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn3">Film 3</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm3" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..3</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn4">Film 4</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm4" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..4</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn5">Film 5</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm5" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..5</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn6">Film 6</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm6" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..6</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn7">Film 7</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm7" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal 7..</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                     </div>
-                    <img class='right_scroll' src="Style/Images/defilement_droite.png" />
-                </div>
+                    <img class='rightScroll' src="Style/Images/defilementDroite.png" />
+                </div>  
             </section>
 
             <section id="Horror">
-                <h1>Horreur</h1>
+                <h1>Horror</h1>
                 <div class="scrolling">
-                    <img class='left_scroll' src="Style/Images/defilement_gauche.png" />
+                    <img class='leftScroll' src="Style/Images/defilementGauche.png" />
                     <div  class="film-list" id="list-best-rated">
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn1">Film 1</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm1" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Some text in the Modal..1</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn2">Film 2</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm2" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..2</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn3">Film 3</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm3" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..3</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn4">Film 4</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm4" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..4</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn5">Film 5</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm5" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..5</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn6">Film 6</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm6" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..6</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn7">Film 7</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm7" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal 7..</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                     </div>
-                    <img class='right_scroll' src="Style/Images/defilement_droite.png" />
+                    <img class='rightScroll' src="Style/Images/defilementDroite.png" />
                 </div>
             </section>
 
             <section id="History">
-                <h1>Histoire</h1>
+                <h1>History</h1>
                 <div class="scrolling">
-                    <img class='left_scroll' src="Style/Images/defilement_gauche.png" />
+                    <img class='leftScroll' src="Style/Images/defilementGauche.png" />
                     <div  class="film-list" id="list-best-rated">
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn1">Film 1</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm1" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Some text in the Modal..1</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn2">Film 2</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm2" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..2</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn3">Film 3</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm3" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..3</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn4">Film 4</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm4" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..4</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn5">Film 5</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm5" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..5</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn6">Film 6</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm6" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..6</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class='film-list__slide'>
-                            <h1 id="BestRatedBtn7">Film 7</h1>
-                        </div>
+                        <div class='film-list__slide'></div>
 
-                        <div id="BestRatedModalFilm7" class="modal">
+                        <div class="modal">
                             <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal 7..</p>
+                                <div class="close">&times;</div>
+                                <div class="modal__image-and-details">
+                                    <div class="modal__image">
+                                        <img src="Style/Images/NoImageBlack.png"/>
+                                    </div>
+                                    <div class="modal__details"> 
+                                        <h1> Title </h1>
+                                        <table>
+                                            <tr><td><h4> Director : </h4></td><td><p></p></td><td><h4> Pays : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Duration : </h4></td><td></td><td><h4> Genre : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Release : </h4></td><td><p></p></td><td><h4> Box-Office : </h4></td><td><p></p></td></tr>
+                                            <tr><td><h4> Casting : </h4></td><td colspan="3"><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal__film-notes-resume">
+                                    <div class="modal__film-notes">
+                                        <table>
+                                            <tr><td><h4> Rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                            <tr><td><h4> Imdb rating </h4></td></tr>
+                                            <tr><td><p></p></td></tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal__film-resume">
+                                        <h4> Summary </h4>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                     </div>
-                    <img class='right_scroll' src="Style/Images/defilement_droite.png" />
+                    <img class='rightScroll' src="Style/Images/defilementDroite.png" />
                 </div>
-            </div>
+            </section>
+            
         </div>
     </div>
 </body>
