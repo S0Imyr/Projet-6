@@ -48,19 +48,6 @@ header nav a {
   border: 2px #e63946 solid;
   border-radius: 15px;
 }
-.best-film .best-film__title {
-  width: 99%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.best-film .best-film__title h1 {
-  width: 100%;
-  margin-left: 40px;
-}
-.best-film .best-film__title button {
-  margin-right: 40px;
-}
 .best-film .best-film__image {
   display: flex;
   flex-direction: column;
@@ -76,7 +63,16 @@ header nav a {
   justify-content: space-between;
   border-radius: 20px;
 }
-.best-film .best-film__description {
+.best-film .best-film__data .best-film__title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.best-film .best-film__data .best-film__title h1 {
+  width: 100%;
+}
+.best-film .best-film__data .best-film__description {
   height: 80%;
   padding: 0px 0px 0px 20px;
   border-radius: 20px;
@@ -193,7 +189,6 @@ button:hover {
   border: 1px solid #a8dadc;
   width: 80%;
   height: 85%;
-  table-layout: fixed;
   /* The Close Button */
 }
 .modal-content h4 {
@@ -219,16 +214,20 @@ button:hover {
 }
 .modal-content .modal__image-and-details .modal__details {
   background-color: #a8dadc;
-  width: 72%;
+  width: 100%;
   padding-left: 15px;
   overflow: auto;
 }
 .modal-content .modal__image-and-details .modal__details table {
-  table-layout: fixed;
   width: 100%;
 }
 .modal-content .modal__image-and-details .modal__details table td {
   text-align: start;
+  min-width: 82px;
+}
+.modal-content .modal__image-and-details .modal__details table tr {
+  max-height: 50px;
+  padding: 0px;
 }
 .modal-content .modal__film-notes-resume {
   display: flex;
@@ -241,8 +240,9 @@ button:hover {
   width: 100%;
   text-align: center;
 }
-.modal-content .modal__film-notes-resume table tr {
-  height: 25%;
+.modal-content .modal__film-notes-resume table td {
+  max-height: 50px;
+  padding: 0px;
 }
 .modal-content .modal__film-notes-resume .modal__film-notes {
   width: 20%;
@@ -264,6 +264,65 @@ button:hover {
   color: #e63946;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media all and (min-width: 512px) {
+  .best-film .best-film__title h1 {
+    margin-left: 40px;
+  }
+  .best-film .best-film__title button {
+    margin-right: 40px;
+  }
+}
+@media all and (max-width: 512px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .logo {
+    padding: 5px;
+    min-width: 100px;
+  }
+  header .logo img {
+    width: 100px;
+  }
+  header nav ul {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .best-film .best-film__image {
+    width: 100px;
+  }
+  .best-film .best-film__title {
+    justify-content: space-between;
+  }
+  .best-film h1 {
+    margin-left: 10px;
+  }
+  .best-film button {
+    margin-right: 10px;
+  }
+
+  .modal-content .close {
+    top: 0px;
+    right: 10px;
+  }
+  .modal-content .modal__image-and-details .modal__image {
+    display: none;
+  }
+  .modal-content .modal__image-and-details .modal__details {
+    width: 100%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .modal-content {
+    font-size: 18px;
+  }
+  .modal-content .modal__image-and-details .modal__details td:nth-child(odd) {
+    width: 135px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

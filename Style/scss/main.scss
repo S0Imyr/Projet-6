@@ -62,19 +62,6 @@ header {
     flex-direction: row;
     border: 2px $color3 solid;
     border-radius: 15px;
-    .best-film__title {
-        width: 99%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        h1 {
-            width: 100%;
-            margin-left: 40px;
-        }
-        button {
-            margin-right: 40px;
-        }
-    }
 
     .best-film__image {
         display: flex;
@@ -91,13 +78,23 @@ header {
         flex-direction: column;
         justify-content: space-between;
         border-radius: 20px;
+        .best-film__title {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            h1 {
+                width: 100%;
+            }
+        }
+        .best-film__description {
+            height: 80%;
+            padding: 0px 0px 0px 20px;
+            border-radius: 20px;
+        }
     }
     
-    .best-film__description {
-        height: 80%;
-        padding: 0px 0px 0px 20px;
-        border-radius: 20px;
-    }
+
 }
 
 .logo{
@@ -213,7 +210,6 @@ button
     border: 1px solid $color4;
     width: 80%;
     height: 85%;
-    table-layout: fixed;
     h4 {
         color:$color3;
     }
@@ -236,14 +232,18 @@ button
         }
         .modal__details{
             background-color: $color4;
-            width: 72%;
+            width: 100%;
             padding-left: 15px;
             overflow: auto;
             table{
-                table-layout: fixed;
                 width: 100%;
                 td {
                     text-align: start;
+                    min-width: 82px;
+                }
+                tr {
+                    max-height: 50px;
+                    padding: 0px;
                 }
             }
         }
@@ -257,8 +257,9 @@ button
         table{
             width: 100%;
             text-align: center;
-            tr {
-                height:25%;
+            td {
+                max-height: 50px;
+                padding: 0px;
             }
         }
         .modal__film-notes{
@@ -286,3 +287,83 @@ button
         }
     }
 } 
+
+
+@media all and (min-width: 512px) {
+    .best-film {
+        .best-film__title {
+            h1 {
+                margin-left: 40px;
+            }
+            button {
+                margin-right: 40px;
+            }
+        }
+    }
+}
+@media all and (max-width: 512px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            padding: 5px;
+            min-width: 100px;
+            img {
+                width: 100px;
+            }
+        }
+        nav {
+            ul {
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+    }
+
+    .best-film {
+        .best-film__image {
+            width: 100px;
+        }
+        .best-film__title {
+            justify-content: space-between;
+        }
+        h1 {
+            margin-left: 10px;
+        }
+        button {
+            margin-right: 10px;
+        }
+    }
+
+    .modal-content {
+        .close {
+            top: 0px;
+            right: 10px;
+        }
+        .modal__image-and-details{
+            .modal__image{
+                display: none;
+            }
+            .modal__details{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+@media all and (min-width: 1024px) {
+    .modal-content{
+        font-size: 18px;
+        .modal__image-and-details{
+            .modal__details{
+                td:nth-child(odd){
+                    width: 135px;
+                }
+            }
+        }
+    }
+
+}
