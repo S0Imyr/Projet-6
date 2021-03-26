@@ -83,7 +83,6 @@ header nav a {
   width: 25%;
 }
 .logo img {
-  size: cover;
   min-width: 100%;
   max-width: 100%;
 }
@@ -208,7 +207,6 @@ button:hover {
   width: 20%;
 }
 .modal-content .modal__image-and-details .modal__image img {
-  size: cover;
   min-width: 100%;
   max-width: 100%;
 }
